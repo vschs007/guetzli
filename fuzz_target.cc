@@ -2,7 +2,6 @@
 #include "guetzli/jpeg_data.h"
 #include "guetzli/jpeg_data_reader.h"
 #include "guetzli/processor.h"
-
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
   std::string jpeg_data(reinterpret_cast<const char*>(data), size);
 
